@@ -8,7 +8,8 @@ how to install:
 cd ~
 git clone https://github.com/tndevreal/sukawm-rice
 cd sukawm-rice
-doas chown -R "$USER:$USER" *
-doas chmod -R a+x *.sh
+sudo chown -R "$USER:$USER" * || doas chown -R "$USER:$USER" *
+sudo chmod a+x install.sh || doas chmod a+x install.sh
+sudo chmod a+x polybar/launch.sh || doas chmod a+x polybar/launch.sh
 ./install.sh
 ```
