@@ -1,7 +1,7 @@
 # sukawm-rice
-yea its a nord themed rice for sukaWM
+yea its a nord themed rice for SukaWM
 
-installation requires sukawm to ALREADY be installed on the system
+installation does NOT need SukaWM to already be installed.
 
 how to install:
 ```
@@ -13,3 +13,4 @@ sudo chmod a+x install.sh || doas chmod a+x install.sh
 sudo chmod a+x polybar/launch.sh || doas chmod a+x polybar/launch.sh
 ./install.sh
 ```
+
