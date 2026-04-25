@@ -1,0 +1,86 @@
+* {
+    /* Nord Palette */
+    nord0: #2E3440;
+    nord1: #3B4252;
+    nord2: #434C5E;
+    nord3: #4C566A;
+
+    nord4: #D8DEE9;
+    nord5: #E5E9F0;
+    nord6: #ECEFF4;
+
+    nord7: #8FBCBB;
+    nord8: #88C0D0;
+    nord9: #81A1C1;
+    nord10: #5E81AC;
+
+    nord11: #BF616A;
+    nord12: #D08770;
+    nord13: #EBCB8B;
+    nord14: #A3BE8C;
+    nord15: #B48EAD;
+
+    background-color: @nord0;
+    text-color: @nord6;
+
+    accent: @nord8;
+    selected-bg: @nord3;
+    urgent-fg: @nord11;
+
+    border-radius: 10px;
+    padding: 6px;
+    spacing: 6px;
+}
+
+window {
+    background-color: #00000080;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+inputbar {
+    background-color: @nord1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+prompt {
+    text-color: @accent;
+}
+
+textbox {
+    text-color: @nord5;
+}
+
+entry {
+    text-color: @nord6;
+}
+
+listview {
+    background-color: @nord0;
+    spacing: 6px;
+    scrollbar: false;
+}
+
+element {
+    background-color: @nord1;
+    text-color: @nord6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+element selected {
+    background-color: @selected-bg;
+    text-color: @accent;
+}
+
+element urgent {
+    text-color: @urgent-fg;
+}
+
+message {
+    background-color: @nord1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
