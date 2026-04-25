@@ -7,5 +7,6 @@ how to install:
 ```
 git clone https://github.com/tndevreal/sukawm-rice
 cd sukawm-rice
+sudo chown $USER : $USER * || doas chown $USER : $USER * 
 ./install.sh
 ```
