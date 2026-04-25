@@ -2,13 +2,13 @@
 autorun='picom; kitty feh --bg-fill ~/Downloads/walp.png; ~/.config/polybar/launch.sh; /usr/lib/xdg-desktop-portal-gtk & ; dunst; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &; '
 define $Mod=Super
 //binds
-bind Mod+T, exec='kitty';
-bind Mod+Return, exec='kitty';
-bind Mod+LMB, exec='MoveWindow';
-bind Mod+RMB, exec='ResizeWindow';
-bind Mod+Control+LMB, exec='MoveCanvas';
-bind Mod+Q, exec='KillWindow';
-bind Mod+A, exec='rofi -show drun';
+bind $Mod+T, exec='kitty';
+bind $Mod+Return, exec='kitty';
+bind $Mod+LMB, exec='MoveWindow';
+bind $Mod+RMB, exec='ResizeWindow';
+bind $Mod+Control+LMB, exec='MoveCanvas';
+bind $Mod+Q, exec='KillWindow';
+bind $Mod+A, exec='rofi -show drun';
 //xf86 binds
 bind XF86AudioMute, exec='pactl set-sink-mute @DEFAULT_SINK@ toggle';
 bind XF86AudioLowerVolume, exec='pactl set-sink-volume @DEFAULT_SINK@ -5%';
