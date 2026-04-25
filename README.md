@@ -9,5 +9,6 @@ cd ~
 git clone https://github.com/tndevreal/sukawm-rice
 cd sukawm-rice
 doas chown -R "$USER:$USER" *
+doas chmod a+x install.sh
 ./install.sh
 ```
