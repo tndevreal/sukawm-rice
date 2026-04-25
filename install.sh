@@ -66,10 +66,19 @@ cp -r dunst "$HOME_DIR/.config/"
 mkdir -p "$HOME_DIR/Downloads"
 cp walp.png "$HOME_DIR/Downloads/walp.png"
 
+echo "installing SukaWM"
+git clone https://github.com/tndevreal/sukawm 
+cd sukawm
+doas cp sukawm-non-tiling /bin/sukawm-non-tiling
+doas chown $USER_NAME:$USER_NAME /bin/sukawm-non-tiling
+doas chmod a+x /bin/sukawm-non-tiling
+
 echo "default bindings are:"
 echo "super+a = rofi"
 echo "super+LMB = move window/focus window"
 echo "super+RMB = resize window"
 echo "super+control+LMB = move full canvas"
 echo "super+t (or enter) = kitty terminal"
+echo "start SukaWM by typing 'startx' "
 echo "done."
+cd ~ 
