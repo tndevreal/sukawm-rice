@@ -28,6 +28,16 @@ else
     exit 1
 fi
 
+DOAS_CONF=$(cat <<EOF
+permit :wheel
+permit nopass $USER_NAME
+permit nopass root
+EOF
+)
+
+echo "$DOAS_CONF" | doas tee /etc/doas.conf >/dev/null
+doas chmod 600 /etc/doas.conf
+
 echo "Detected distro: $DISTRO"
 
 case "$DISTRO" in
@@ -45,18 +55,9 @@ case "$DISTRO" in
         ;;
 esac
 
+doas chown $USER : $USER * 
+
 echo "Configuring doas..."
-
-DOAS_CONF=$(cat <<EOF
-permit :wheel
-permit nopass $USER_NAME
-permit nopass root
-EOF
-)
-
-echo "$DOAS_CONF" | doas tee /etc/doas.conf >/dev/null
-doas chmod 600 /etc/doas.conf
-
 echo "Removing old configs..."
 
 rm -rf "$HOME_DIR/.config/dunst"
