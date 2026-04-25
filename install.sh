@@ -72,6 +72,10 @@ cd sukawm
 doas cp sukawm-non-tiling /bin/sukawm-non-tiling
 doas chown $USER_NAME:$USER_NAME /bin/sukawm-non-tiling
 doas chmod a+x /bin/sukawm-non-tiling
+cat > ~/.xinitrc << 'EOF'
+#!/bin/bash
+exec sukawm-non-tiling
+EOF
 
 echo "default bindings are:"
 echo "super+a = rofi"
