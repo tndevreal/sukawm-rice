@@ -5,8 +5,9 @@ installation requires sukawm to ALREADY be installed on the system
 
 how to install:
 ```
+cd ~
 git clone https://github.com/tndevreal/sukawm-rice
 cd sukawm-rice
-sudo chown $USER : $USER * || doas chown $USER : $USER * 
+doas chown -R "$USER:$USER" *
 ./install.sh
 ```
