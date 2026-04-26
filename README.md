@@ -7,6 +7,15 @@ yea its a nord themed rice for SukaWM
   *  Void
 
 
+You CAN install SukaWM and the SukaWM rice on ALMOST any distro, as long as it has:
+
+ *  A working Xlibre or Xorg server
+ *  SukaWM's dependencies(not needed, but MASSIVELY improve the SukaWM experience.
+
+You just need to do it manually, you can check what the installation script does and then: edit it, or just run the commands needed(adjust package manager if needed)
+
+
+
 More distros will work in the future
 
 
