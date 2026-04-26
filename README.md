@@ -1,6 +1,14 @@
 # sukawm-rice
 yea its a nord themed rice for SukaWM
 
+# Works only on:
+  *  Arch
+  *  Artix
+  *  Void
+More distros will work in the future
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
 installation does NOT need SukaWM to already be installed.
 
 preview:
