@@ -5,7 +5,11 @@ yea its a nord themed rice for SukaWM
   *  Arch
   *  Artix
   *  Void
+
+
 More distros will work in the future
+
+
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 
