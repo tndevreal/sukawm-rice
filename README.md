@@ -3,6 +3,10 @@ yea its a nord themed rice for SukaWM
 
 installation does NOT need SukaWM to already be installed.
 
+preview:
+![Failed to load](preview.jpg)   
+
+
 how to install:
 ```
 cd ~
