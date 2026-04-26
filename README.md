@@ -39,3 +39,7 @@ sudo chmod a+x polybar/launch.sh || doas chmod a+x polybar/launch.sh
 ./install.sh
 ```
 
+
+yes im too lazy to add kitty config to the script or make a folder for it
+but the file is there anyway
+
