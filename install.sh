@@ -39,7 +39,7 @@ echo "Detected distro: $DISTRO"
 case "$DISTRO" in
     void)
         doas xbps-install -Sy dunst rofi polybar picom flatpak feh \
-            xdg-desktop-portal-gtk kitty polkit-gnome doas
+            xdg-desktop-portal-gtk kitty polkit-gnome opendoas
         ;;
     arch|artix)
         doas pacman -Sy --noconfirm dunst rofi polybar picom flatpak feh \
