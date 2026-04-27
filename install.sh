@@ -5,7 +5,7 @@ USER_NAME="$(whoami)"
 HOME_DIR="/home/$USER_NAME"
 
 echo "WARNING: This will DELETE your existing configs for:"
-echo "dunst, rofi, polybar, suka, picom"
+echo "dunst, rofi, polybar, suka, picom, kitty"
 echo "and replace them with new ones."
 echo
 read -rp "Continue? (Y/N): " confirm
@@ -52,7 +52,8 @@ rm -rf "$HOME_DIR/.config/dunst" \
        "$HOME_DIR/.config/rofi" \
        "$HOME_DIR/.config/polybar" \
        "$HOME_DIR/.config/suka" \
-       "$HOME_DIR/.config/picom"
+       "$HOME_DIR/.config/picom" \
+       "$HOME_DIR/.config/kitty"
 
 echo "Copying new configs..."
 mkdir -p "$HOME_DIR/.config"
