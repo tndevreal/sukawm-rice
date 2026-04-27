@@ -76,6 +76,8 @@ cat > ~/.xinitrc << 'EOF'
 #!/bin/bash
 exec sukawm-non-tiling
 EOF
+doas mkdir ~/.config/kitty
+doas cp kitty.conf  ̃/.config/kitty/
 
 echo "default bindings are:"
 echo "super+a = rofi"
